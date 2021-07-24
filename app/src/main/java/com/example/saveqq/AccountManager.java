@@ -15,7 +15,7 @@ public class AccountManager {
      * @param id
      * @return
      */
-    private static AccountBean findAccount(String id) {
+    public static AccountBean findAccount(String id) {
         for (AccountBean bean : sAccountList) {
             if (id.equals(bean.getId())) {
                 return bean;
@@ -54,7 +54,7 @@ public class AccountManager {
      * @param id
      * @param password
      */
-    public static void addAccount(String id, String password) {
-        sAccountList.add(new AccountBean(id, password));
+    public static void addAccount(String name,String id, String password) {
+        sAccountList.add(new AccountBean(name,id, password));
     }
 }

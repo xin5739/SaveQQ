@@ -4,10 +4,20 @@ public class AccountBean {
 
     private String id;
     private String password;
+    private String name;
 
-    public AccountBean(String id, String password) {
+    public AccountBean(String name ,String id, String password) {
         this.id = id;
         this.password = password;
+        this.name = name;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
     }
 
     public String getId() {
